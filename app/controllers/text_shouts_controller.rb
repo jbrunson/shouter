@@ -1,6 +1,4 @@
 class TextShoutsController < ApplicationController
-
-  
   def create
     content = build_content
     shout = current_user.shouts.build(content: content)
@@ -11,9 +9,6 @@ class TextShoutsController < ApplicationController
       redirect_to dashboard_path
     end
   end
-
-
-
  
   private
 
@@ -24,5 +19,4 @@ class TextShoutsController < ApplicationController
   def text_shout_params
     params.require(:text_shout).permit(:body)
   end
-
 end

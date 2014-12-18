@@ -4,7 +4,6 @@ class HashtagsController < ApplicationController
     @search = Search.new(term: hashtag)
   end
 
-
   private
 
   def hashtag

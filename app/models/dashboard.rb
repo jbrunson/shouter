@@ -4,8 +4,6 @@ class Dashboard
     @user = user
   end
 
-
-
   def new_text_shout
     TextShout.new
   end

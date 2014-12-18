@@ -1,5 +1,4 @@
 class FollowingRelationshipsController < ApplicationController
-
   def create
     current_user.follow user
     redirect_to user, notice: "You are now following #{user.username}"
